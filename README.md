@@ -14,3 +14,7 @@ If working locally:
 If building for production:
 
     npm run prod
+
+To watch the assets:
+
+    npm run watch
