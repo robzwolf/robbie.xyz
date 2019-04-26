@@ -1,5 +1,5 @@
 # robbie.xyz
-Personal website
+Personal website for Robbie Jakob-Whitworth.
 
 ## Quick Start
 ### 1. Install dependencies
