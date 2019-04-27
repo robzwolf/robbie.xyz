@@ -1,0 +1,11 @@
+@import "colours";
+
+@mixin lightText {
+  color: $textWhite;
+  text-shadow: $textShadowDark;
+}
+
+@mixin darkText {
+  color: $textBlack;
+  text-shadow: $textShadowLight;
+}
