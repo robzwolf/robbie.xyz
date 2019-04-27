@@ -10,7 +10,7 @@ body {
   main.container {
     display: grid;
     grid-template-columns: repeat(3, calc(100%/3));
-    grid-template-rows: repeat(2, 50%);
+    grid-template-rows: repeat(3, calc(100%/3));
     height: 100vh;
 
     section {
@@ -52,6 +52,7 @@ body {
         box-shadow: 2px 2px 4px 2px $buttonShadow;
         margin: 1rem 2rem;
         transition: all 0.15s;
+        text-shadow: none;
 
         &:hover {
           background: $buttonLightBlue;
@@ -64,10 +65,12 @@ body {
 
       &.name {
         background: $robbieBG;
-        @include lightText;
+        @include darkText;
+        grid-column: span 3;
 
         h1 {
-          font-size: 3.5rem;
+          font-size: 4.5rem;
+          color: $robbieTitle;
         }
       }
 
@@ -94,6 +97,7 @@ body {
       &.contact {
         background: $contactBG;
         @include lightText;
+        grid-column: span 2;
       }
     }
   }
