@@ -1,0 +1,79 @@
+@import "colours";
+@import "mixins";
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  main.container {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    grid-template-rows: repeat(3, calc(100%/3));
+    height: 100vh;
+
+    @include mediumScreens {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: unset;
+    }
+
+    @include smallScreens {
+      grid-template-columns: 1fr;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1.5rem;
+
+      @include smallScreens {
+        height: 90vw;
+      }
+
+      h1, h2 {
+        font-family: Oswald, sans-serif;
+        margin: 0;
+      }
+
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+
+      img {
+        max-width: 70%;
+        max-height: 70%;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+      .button {
+        display: block;
+        font-family: Work Sans, sans-serif;
+        font-weight: 800;
+        font-size: 1.4rem;
+        font-variant: small-caps;
+        text-decoration: none;
+        width: auto;
+        color: $textWhite;
+        border-radius: 6px;
+        background: $buttonBlue;
+        border: 4px outset $buttonBlue;
+        box-shadow: 2px 2px 4px 2px $buttonShadow;
+        margin: 1rem auto;
+        padding: 0.5rem 2rem;
+        transition: all 0.15s;
+        text-shadow: none;
+
+        &:hover {
+          background: $buttonLightBlue;
+        }
+
+        &:active {
+          border-style: inset;
+        }
+      }
+    }
+  }
+}
