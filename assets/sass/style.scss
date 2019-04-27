@@ -1,5 +1,6 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "colours";
+@import "mixins";
 
 html, body {
   height: 100vh;
@@ -17,7 +18,7 @@ body {
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1.5rem;
 
       h1, h2 {
         font-family: Oswald, sans-serif;
@@ -29,8 +30,8 @@ body {
       }
 
       img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 70%;
+        max-height: 70%;
         align-self: center;
         margin-bottom: 1rem;
       }
@@ -63,36 +64,36 @@ body {
 
       &.name {
         background: $robbieBG;
-        color: $textWhite;
+        @include lightText;
 
         h1 {
-          font-size: 3rem;
+          font-size: 3.5rem;
         }
       }
 
       &.work {
         background: $komodoBG;
-        color: $textBlack;
+        @include darkText;
       }
 
       &.durhack {
         background: $durhackBG;
-        color: $textWhite;
+        @include lightText;
       }
 
       &.compsoc {
         background: $compsocBG;
-        color: $textBlack;
+        @include darkText;
       }
 
       &.durham-university {
         background: $durhamUniversityBG;
-        color: $textWhite;
+        @include lightText;
       }
 
       &.contact {
         background: $contactBG;
-        color: $textWhite;
+        @include lightText;
       }
     }
   }
