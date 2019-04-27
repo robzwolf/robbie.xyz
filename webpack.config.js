@@ -4,13 +4,17 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-module.exports = {
-    entry: { main: './assets/js/index.js' },
-    output: {
+module.exports = (env, argv) => {
+    const entry = {
+        main: './assets/js/index.js'
+    };
+
+    const output = {
         path: path.resolve(__dirname, 'public/dist'),
         filename: 'app.js'
-    },
-    module: {
+    };
+
+    const module = {
         rules: [
             {
                 test: /\.js$/,
@@ -28,11 +32,18 @@ module.exports = {
                 ]
             }
         ]
-    },
-    plugins: [
+    };
+
+    const plugins = [
         new MiniCssExtractPlugin({
             filename: 'style.css'
-        }),
-        new OptimizeCssAssetsPlugin()
-    ]
+        })
+    ];
+
+    // Minify CSS if we're building for production
+    if (argv.mode === 'production') {
+        plugins.push(new OptimizeCssAssetsPlugin());
+    }
+
+    return { entry, output, module, plugins };
 };
