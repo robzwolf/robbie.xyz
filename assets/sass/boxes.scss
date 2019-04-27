@@ -1,7 +1,7 @@
 @import "colours";
 @import "mixins";
 
-main {
+body main.container {
   section {
     &.name {
       background: $robbieBG;
@@ -12,6 +12,10 @@ main {
         font-size: 4.5rem;
         font-variant: small-caps;
         color: $robbieTitle;
+
+        @include smallScreens {
+          font-size: 3rem;
+        }
       }
 
       @include mediumScreens {
