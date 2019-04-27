@@ -2,13 +2,19 @@
 
 // Text colours and shadows
 @mixin lightText {
-  color: $textWhite;
   text-shadow: $textShadowDark;
+
+  &, a {
+    color: $textWhite;
+  }
 }
 
 @mixin darkText {
-  color: $textBlack;
   text-shadow: $textShadowLight;
+
+  &, a {
+    color: $textBlack;
+  }
 }
 
 // Break points

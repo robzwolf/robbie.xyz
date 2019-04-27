@@ -48,6 +48,14 @@ body {
         margin-bottom: 1rem;
       }
 
+      a {
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
       .button {
         display: block;
         font-family: Work Sans, sans-serif;
