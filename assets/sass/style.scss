@@ -35,6 +35,30 @@ body {
         margin-bottom: 1rem;
       }
 
+      .button {
+        display: block;
+        font-family: Questrial, sans-serif;
+        text-decoration: none;
+        width: auto;
+        color: $textBlack;
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+        border-radius: 6px;
+        background: $buttonBlue;
+        border: 4px outset $buttonBlue;
+        box-shadow: 2px 2px 4px 2px $buttonShadow;
+        margin: 1rem 2rem;
+        transition: all 0.15s;
+
+        &:hover {
+          background: $buttonLightBlue;
+        }
+
+        &:active {
+          border-style: inset;
+        }
+      }
+
       &.name {
         background: $robbieBG;
         color: $textWhite;
