@@ -3,3 +3,4 @@ node_modules/
 public/dist/
 .scp-path
 .scp-pass
+.DS_Store

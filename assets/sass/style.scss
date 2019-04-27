@@ -1,5 +1,70 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "colours";
+
+html, body {
+  height: 100vh;
+}
+
 body {
-  h1 {
-    color: red;
+  main.container {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    grid-template-rows: repeat(2, 50%);
+    height: 100vh;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+
+      h1, h2 {
+        font-family: Oswald, sans-serif;
+        margin: 0;
+      }
+
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+      &.name {
+        background: $robbieBG;
+        color: $textWhite;
+
+        h1 {
+          font-size: 3rem;
+        }
+      }
+
+      &.work {
+        background: $komodoBG;
+        color: $textBlack;
+      }
+
+      &.durhack {
+        background: $durhackBG;
+        color: $textWhite;
+      }
+
+      &.compsoc {
+        background: $compsocBG;
+      }
+
+      &.durham-university {
+        background: purple;
+      }
+
+      &.contact {
+        background: aquamarine;
+      }
+    }
   }
 }
