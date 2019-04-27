@@ -1,8 +1,7 @@
+// Styles for building
 import '../sass/style.scss';
 
-console.log('hello world');
+// Other JS files for building
+import './typeform';
 
-const a = [1,2,3];
-const b = [...a];
-
-console.log(b);
+console.log("If you're reading this, you're the kind of person we need at DurHack! Check out https://durhack.com!");

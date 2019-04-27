@@ -7,7 +7,7 @@ module.exports = {
     entry: { main: './assets/js/index.js' },
     output: {
         path: path.resolve(__dirname, 'public/dist'),
-        filename: 'main.js'
+        filename: 'app.js'
     },
     module: {
         rules: [
