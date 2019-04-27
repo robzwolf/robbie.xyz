@@ -56,10 +56,12 @@ body {
 
       &.compsoc {
         background: $compsocBG;
+        color: $textBlack;
       }
 
       &.durham-university {
-        background: purple;
+        background: $durhamUniversityBG;
+        color: $textWhite;
       }
 
       &.contact {
