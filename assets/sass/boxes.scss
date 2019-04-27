@@ -1,0 +1,56 @@
+@import "colours";
+@import "mixins";
+
+main {
+  section {
+    &.name {
+      background: $robbieBG;
+      @include darkText;
+      grid-column: span 3;
+
+      h1 {
+        font-size: 4.5rem;
+        font-variant: small-caps;
+        color: $robbieTitle;
+      }
+
+      @include mediumScreens {
+        grid-column: span 2;
+      }
+
+      @include smallScreens {
+        grid-column: span 1;
+      }
+    }
+
+    &.work {
+      background: $komodoBG;
+      @include darkText;
+    }
+
+    &.durhack {
+      background: $durhackBG;
+      @include lightText;
+    }
+
+    &.compsoc {
+      background: $compsocBG;
+      @include darkText;
+    }
+
+    &.durham-university {
+      background: $durhamUniversityBG;
+      @include lightText;
+    }
+
+    &.contact {
+      background: $contactBG;
+      @include lightText;
+      grid-column: span 2;
+
+      @include smallScreens {
+        grid-column: span 1;
+      }
+    }
+  }
+}

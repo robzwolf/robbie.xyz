@@ -1,5 +1,6 @@
 @import "colours";
 
+// Text colours and shadows
 @mixin lightText {
   color: $textWhite;
   text-shadow: $textShadowDark;
@@ -8,4 +9,22 @@
 @mixin darkText {
   color: $textBlack;
   text-shadow: $textShadowLight;
+}
+
+// Break points
+$smallBreakPoint: 530px;
+$mediumBreakPoint: 840px;
+
+// Media queries
+
+@mixin mediumScreens {
+  @media screen and (max-width: $mediumBreakPoint) {
+    @content
+  }
+}
+
+@mixin smallScreens {
+  @media screen and (max-width: $smallBreakPoint) {
+    @content
+  }
 }
