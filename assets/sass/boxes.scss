@@ -13,7 +13,7 @@ body main.container {
         font-variant: small-caps;
         color: $robbieTitle;
 
-        @include smallScreens {
+        @include mediumScreens {
           font-size: 3rem;
         }
       }
