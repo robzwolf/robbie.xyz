@@ -4,9 +4,9 @@
   "description": "Personal website for Robbie Jakob-Whitworth",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "prod": "webpack --mode production",
-    "watch": "webpack --watch --mode development",
+    "dev": "webpack --progress --hide-modules --mode development",
+    "prod": "webpack --progress --hide-modules --mode production",
+    "watch": "webpack --progress --hide-modules --watch --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
