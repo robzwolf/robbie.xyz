@@ -44,17 +44,13 @@ body main.container {
 
     &.durham-university {
       background: $durhamUniversityBG;
+      grid-column: span 2;
       @include lightText;
     }
 
-    &.contact {
-      background: $contactBG;
-      @include lightText;
-      grid-column: span 2;
-
-      @include smallScreens {
-        grid-column: span 1;
-      }
+    &.mlh {
+      background: $mlhBG;
+      @include darkText;
     }
   }
 }
