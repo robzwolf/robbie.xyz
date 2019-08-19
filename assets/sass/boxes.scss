@@ -47,14 +47,13 @@ body main.container {
       @include lightText;
     }
 
+    &.mlh {
+      @include darkText;
+    }
+
     &.contact {
       background: $contactBG;
       @include lightText;
-      grid-column: span 2;
-
-      @include smallScreens {
-        grid-column: span 1;
-      }
     }
   }
 }
