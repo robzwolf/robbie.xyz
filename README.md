@@ -1,6 +1,11 @@
 # robbie.xyz
 Personal website for Robbie Jakob-Whitworth.
 
+## Requirements
+- node v10
+    - > v12 does not work
+- something to serve the webpages statically (e.g. Python, apache, nginx)
+
 ## Quick Start
 ### 1. Install dependencies
 
