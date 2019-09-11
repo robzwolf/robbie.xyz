@@ -32,7 +32,6 @@ running Apache/PHP or similar.
 #### Netlify
 If you have [netlify-cli](https://www.netlify.com/docs/cli/#installation) installed:
 
-    cd public/
     netlify dev
     
 #### Python
