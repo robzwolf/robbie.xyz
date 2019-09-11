@@ -5,3 +5,7 @@
 [[redirects]]
   from = "/cv"
   to = "/files/CV-Robbie-Jakob-Whitworth-Web.pdf"
+
+[[redirects]]
+  from = "/r/tv"
+  to = "/tv"
