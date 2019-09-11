@@ -19,10 +19,6 @@ body main.container {
       }
 
       @include mediumScreens {
-        grid-column: span 2;
-      }
-
-      @include smallScreens {
         grid-column: span 1;
       }
     }
@@ -46,6 +42,10 @@ body main.container {
       background: $durhamUniversityBG;
       grid-column: span 2;
       @include lightText;
+
+      @include mediumScreens {
+        grid-column: span 1;
+      }
     }
 
     &.mlh {

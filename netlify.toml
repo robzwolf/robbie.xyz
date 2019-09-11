@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "public/"
+
+[[redirects]]
+  from = "/cv"
+  to = "/files/CV-Robbie-Jakob-Whitworth-Web.pdf"
+
+[[redirects]]
+  from = "/r/tv"
+  to = "/tv"
+
+[[redirects]]
+  from = "/pay/*"
+  to = "https://settleup.starlingbank.com/robertjakobwhitworth?amount=:splat"

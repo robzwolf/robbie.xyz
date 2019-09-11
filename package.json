@@ -7,6 +7,7 @@
     "dev": "webpack --progress --hide-modules --mode development",
     "prod": "webpack --progress --hide-modules --mode production",
     "watch": "webpack --progress --hide-modules --watch --mode development",
+    "build": "npm i && npm run prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
