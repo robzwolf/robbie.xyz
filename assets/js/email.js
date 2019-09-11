@@ -13,7 +13,7 @@ const Email = (() => {
     const insertEmail = (() => {
         const anchor = document.createElement('a');
         const email = atob(encodedEmail);
-        anchor.setAttribute('href', email);
+        anchor.setAttribute('href', `mailto:${email}`);
         anchor.textContent = email;
         emailMountPoint.innerHTML = '';
         emailMountPoint.appendChild(anchor);
