@@ -4,7 +4,7 @@ Personal website for Robbie Jakob-Whitworth.
 ## Requirements
 - node v10
     - > v12 does not work
-- something to serve the webpages statically (e.g. Python, apache, nginx)
+- [netlify-cli](https://www.netlify.com/docs/cli/#installation)
 
 ## Quick Start
 ### 1. Install dependencies
@@ -25,9 +25,18 @@ To watch the assets:
     npm run watch
 
 ### 3. Start server
-This project is designed to be served as static pages. It can be deployed
-to shared hosting running Apache/PHP or similar. If working locally, it
-is convenient to run the following if you have Python 3 installed:
+This project is designed to be served as static pages. It can be deployed to static hosting
+such as GitHub Pages, Netlify, etc. Additionally, it can be deployedto shared hosting
+running Apache/PHP or similar. 
+
+#### Netlify
+If you have [netlify-cli](https://www.netlify.com/docs/cli/#installation) installed:
+
+    cd public/
+    netlify dev
+    
+#### Python
+Alternatively, if you have Python:
 
 #### Python 3
 
