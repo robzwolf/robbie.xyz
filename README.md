@@ -26,7 +26,7 @@ To watch the assets:
 
 ### 3. Start server
 This project is designed to be served as static pages. It can be deployed to static hosting
-such as GitHub Pages, Netlify, etc. Additionally, it can be deployedto shared hosting
+such as GitHub Pages, Netlify, etc. Additionally, it can be deployed to shared hosting
 running Apache/PHP or similar. 
 
 #### Netlify
