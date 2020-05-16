@@ -38,6 +38,11 @@ body main.container {
       @include darkText;
     }
 
+    &.hackathons-uk {
+      background: $hackathonsUKBG;
+      @include lightText;
+    }
+
     &.durham-university {
       background: $durhamUniversityBG;
       grid-column: span 2;
