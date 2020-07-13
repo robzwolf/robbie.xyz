@@ -11,5 +11,9 @@
   to = "/tv"
 
 [[redirects]]
+  from = "/r/mouse"
+  to = "/mouse"
+
+[[redirects]]
   from = "/pay/*"
   to = "https://settleup.starlingbank.com/robertjakobwhitworth?amount=:splat"
