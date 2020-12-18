@@ -16,4 +16,4 @@
 
 [[redirects]]
   from = "/pay/*"
-  to = "https://settleup.starlingbank.com/robertjakobwhitworth?amount=:splat"
+  to = "https://robbie.cash/:splat"
