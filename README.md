@@ -1,3 +1,10 @@
+# RETIRED
+Replaced by [robzwolf/website](https://github.com/robzwolf/website).
+
+The below is preserved for historical reasons only.
+
+***
+
 # robbie.xyz
 Personal website for Robbie Jakob-Whitworth.
 
