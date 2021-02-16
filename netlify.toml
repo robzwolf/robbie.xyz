@@ -1,4 +1,15 @@
 [[redirects]]
-  from = "/*"
+  from = "https://robbie.xyz/*"
   to = "https://robbie.dev/:splat"
 
+[[redirects]]
+  from = "http://robbie.xyz/*"
+  to = "https://robbie.dev/:splat"
+
+[[redirects]]
+  from = "https://robbie.xyz"
+  to = "https://robbie.dev"
+
+[[redirects]]
+  from = "http://robbie.xyz"
+  to = "https://robbie.dev"
